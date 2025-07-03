@@ -1,26 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Education & Experiences</title>
+  <title>Education</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="top-bar">
-     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="Skills.html">Skills</a>
-        <a href="Annexes.html">Education & Experiences</a>
-        <a href="contact.html">Contact</a>
-
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="about.html">About Me</a>
+         <a href="Qualities and weaknesses.html">Qualities and weaknesses</a>
+         <a href="Skills.html">Skills</a>
+         <a href="Annexes.html">Education and Trainings</a>
+         <a href="contact.html">Contact</a>
       </nav>
     </div>
-
-    <h1>Education & Experiences</h1>
-
+    <h1>Education and Trainings</h1>
   </header>
+
+  <section class="edu-section">
+    <div class="education">
+      <h2>Education</h2>
+      <p>
+        I am currently a student at Haute École Louvain en Hainaut (HELHa) in Charleroi, and I am in my third year of a university college degree in industrial IT. The courses combine theory and practice, and every concept is applied through projects. This three-year program helps us develop skills in programming, automation, electronics, embedded systems, and networks.
+      </p>
+      <p>
+        As the years went by, I gradually became more interested in web development. Web-oriented courses and school projects allowed me to understand how to build interfaces, how to design a page that’s both pleasant to use and visually appealing, and how the connection between front-end and back-end works.That’s why, today, my long-term goal is to work in web development or as a full-stack developer. This goal motivates me to progress in my studies and obtain my degree.
+    
+      <p>
+        Before starting higher education, I earned my secondary school certificate specializing in mathematics and sciences at Athénée Royal Ernest Solvay. I was naturally drawn to logical and scientific subjects like mathematics and physics, which is why I chose this option from my very first year.Throughout secondary school, I learned how to organize myself, work independently, and be patient thanks to many exams and challenges along the way.Unfortunately, during those years, I was still unsure about my future career path. If I had discovered my passion for IT earlier, I would have definitely chosen a study track more closely related to computing from the start.
+      </p>
+    </div>
+
+    <div class="training">
+      <h2>Trainings</h2>
+      <p>
+        During my studies at HELHa, I had the opportunity to attend several training sessions at the Technocampus in Mons.
+      </p>
+      <p>
+        The first time, I was introduced to pneumatics, hydraulics, and industrial electrical systems. It was an initiation to the basics of automation.
+      </p>
+      <p>
+        The second time, we worked on sensors, instrumentation, and control systems. I learned how to use different types of sensors and create small programs using a programmable logic controller (PLC).
+      </p>
+      <p>
+        The third time, we carried out a project focused on collecting data from a PLC remotely and sending it in real time to our web application. We also used an XR headset to visualize this data in an immersive environment.
+      </p>
+    </div>
+    <h2 class="section-title">Project</h2>
+<div class="projects">
+  <p><strong>First-Year Project</strong></p>
+  <p>
+    As part of our first-year multidisciplinary project, we were divided into teams to carry out a practical task that combined three key subjects: electronics, C programming, and system analysis.
+    The main objective was to design an interactive dice game. The rules were simple: each player rolled two dice and added the results. If the total exceeded 55, the player lost the game. The game continued until someone won.
+    From the electronics side, we used 12 LEDs to show the values rolled by the dice. For the programming part, we had to write a program in C that followed the game’s rules. We programmed the dice rolling logic and made sure the scores updated correctly after each turn. At the end, we linked the electronic part to our code so that the whole setup could run smoothly as one system.
+    Even though we faced a few challenges, this project helped us become more independent, learn how to look for solutions by ourselves, manage our time better, and most importantly, how to work effectively in a team.
+  </p>
+
+  <p><strong>Second-Year Project</strong></p>
+  <p>
+    For our second-year multidisciplinary project, we were divided into several teams based on our individual skills and knowledge. The project's goal was to sort balls of two different colors so that each one would end up in the correct container.
+    To achieve this, we placed several balls inside a pipe that contains two main components, an ultrasonic proximity sensor and a servo motor.
+    The ultrasonic sensor detected when a ball was present. Once detected, the servo motor quickly rotated from 90° to 0°, then returned to its original position. This mechanism allowed us to release the balls one by one, spaced a few seconds apart.
+    After being released, the ball dropped into the detection zone of a HuskyLens camera. The camera recognized the ball's color and displayed the result on an LCD screen to inform the user.
+    If the ball was pink, the stepper motor moved forward by 100 steps, paused for one second, and then moved back. If the ball was yellow, the movement was reversed. The ball was then guided through a pipe into the appropriate container.
+    However, if the correct container was full or the ball was neither pink nor yellow, it was redirected to a mixed container.
+    This project was an excellent opportunity to work with color recognition, real-time actuation, and team-based decision-making, all while combining electronics, programming, and automation in a practical scenario.
+  </p>
+
+  <p><strong>Third-Year Project</strong></p>
+  <p>
+    As part of my third-year project, we were required to define and write our design brief. I decided to create an autonomous system capable of regulating the temperature inside a small box based on a predefined threshold.
+    A temperature sensor continuously monitors the internal temperature. If it exceeds the threshold, a fan turns on to cool the box. If it drops below the limit, a heating lamp is activated to raise the temperature.
+    To carry out this project, I used an ESP8266 microcontroller to manage both the data processing and the communication. It sends real-time information to a mobile application.
+    On the software side, I developed a mobile app using React Native with Expo Go to display the data sent from the ESP8266. For example, the app shows the current temperature of the box in real time.
+    The app includes several screens: a homepage, a dashboard showing the live temperature, and a history page displaying all recorded values. This historical view also consists of a real-time graph for better data interpretation.
+    This project helped me combine embedded systems, mobile development, and real-time monitoring skills, which I’m eager to keep developing in my future career.
+  </p>
+</div>
+
+  </section>
 </body>
 </html>
