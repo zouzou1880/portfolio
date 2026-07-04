@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="about.html">About Me</a>
+         <a href="Qualities and weaknesses.html">Qualities and weaknesses</a>
+         <a href="Skills.html">Skills</a>
+         <a href="Annexes.html">Education and Trainings</a>
+         <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <h1>Education and Trainings</h1>
+  </header>
+
+  <section class="edu-section">
+    <div class="education">
+      <h2>Education</h2>
+      <p>
+        I am currently a student at Haute École Louvain en Hainaut (HELHa) in Charleroi, in my third year of a university college degree in industrial IT. The courses combine theory and practice, and every concept is applied through projects. This three-year program helps us develop skills in programming, automation, electronics, embedded systems, and networks.
+      </p>
+      <p>
+        Over the years, I gradually became more interested in web development. Web-oriented courses and school projects helped me learn to build interfaces, design pages that are both pleasant to use and visually appealing, and understand how the front-end and back-end work together.
+        That’s why my long-term goal today is to work in web development, specifically as a full-stack developer. This goal motivates me to progress in my studies and obtain my degree.
+      </p>
+      <p>
+        Before starting higher education, I earned my secondary school certificate, specialising in mathematics and sciences, at Athénée Royal Ernest Solvay. I was naturally drawn to logical and scientific subjects such as mathematics and physics, which is why I chose this option from my first year.
+        Throughout secondary school, I learned how to organise myself, work independently, and be patient thanks to many exams and challenges along the way.
+        Unfortunately, during those years, I was still unsure about my future career path. If I had discovered my passion for IT earlier, I would have chosen a study track more closely aligned with computing from the start.
+      </p>
+    </div>
+
+    <div class="training">
+      <h2>Trainings</h2>
+      <p>
+      During my studies at HELHa, I attended several training sessions at the Technocampus in Mons.
+      </p>
+      <p>
+      The first time, I was introduced to pneumatics, hydraulics and industrial electrical systems. It was an introduction to the basics of automation.
+      </p>
+            <p>
+      The second time, we worked on sensors, instrumentation and control systems. I learned to use various sensors and create small programs using a programmable logic controller (PLC).
+      </p>
+            <p>
+      The third time, we completed a large project to collect data from a remote PLC and connect to an industrial VPN called "EWON".
+      From this one, we had access to the automaton and, more precisely, to this data. Our goal was to retrieve at least one dynamic value and one static value. For example, we retrieved the state of specific industrial presence sensors, which were our dynamic values, to display them in real time on our web application.
+      </p>
+      <p>
+      Finally, we also used an XR headset to visualise this data in an immersive environment.
+       </p>
+
+       <p>
+          In addition to these various training sessions in Mons, I completed my end-of-studies
+          internship at the CETIC research centre in Gosselies.
+          My task was to create interactive dashboards within an existing web application called
+          Xerian. It is an application dedicated to software risk and compliance management.
+       </p>
+      
+    </div>
+    
+<div class="projects">
+  <h2 style="text-align: center;">Projects</h2>
+  <p><strong>First-Year Project</strong></p>
+  <p>
+    As part of our first-year multidisciplinary project, we were divided into teams to complete a practical task that combined three key subjects: electronics, C programming, and systems analysis.
+    The main objective was to design an interactive dice game. The rules were simple: each player rolled two dice and added the results. If the total exceeded 55, the player lost the game. The game continued until someone won.
+    From the electronics side, we used 12 LEDs to show the values rolled by the dice. For the programming part, we had to write a program in C that followed the game’s rules. We implemented the dice-rolling logic and ensured scores updated correctly after each turn. At the end, we linked the electronic part to our code so that the whole setup could run smoothly as one system.
+    Even though we faced a few challenges, this project helped us become more independent, learn to find solutions independently, manage our time more effectively, and, most importantly, work effectively in a team.
+
+  </p>
+
+  <p><strong>Second-Year Project</strong></p>
+  <p>
+    For our second-year multidisciplinary project, we were assigned to teams based on our individual skills and knowledge. The project's goal was to sort balls of two different colours so that each one would end up in the correct container.
+    To achieve this, we placed several balls inside a pipe that contains two main components: an ultrasonic proximity sensor and a servo motor.
+    The ultrasonic sensor detected the presence of a ball. Once detected, the servo motor rotated from 90° to 0° and then returned to its original position. This mechanism allowed us to release the balls one by one, spaced a few seconds apart.
+    After being released, the ball dropped into the detection zone of a HuskyLens camera. The camera recognised the ball's colour and displayed the result on an LCD screen to inform the user.
+    If the ball was pink, the stepper motor moved forward by 100 steps, paused for one second, and then moved back. If the ball was yellow, the movement was reversed. The ball was then guided through a pipe into the appropriate container.
+    However, if the correct container was full or the ball was neither pink nor yellow, it was redirected to a mixed container.
+    This project was an excellent opportunity to work with colour recognition, real-time actuation, and team-based decision-making, all while combining electronics, programming, and automation in a practical scenario.
+
+  </p>
+
+  <p><strong>Third-Year Project</strong></p>
+  <p>
+    To implement this project, I used an ESP8266 microcontroller to manage both data transmission and reception to the components. In the previous version of this project, the ESP8266 sent real-time data to my mobile app.
+    It is now a LoRA module called "LoRA transmitter" attached to an Arduino, which communicates with the ESP8266 so the ESP can send the data it has collected to the LoRA module. This data is collected by the LoRA module and transmitted via the LoRAWAN protocol to a LoRA gateway.
+    Finally, the data received in the LORA gateway will be sent to the TypeScript/JavaScript server.
+    On the software side, I developed a mobile application using React Native with Expo Go to display the recovered data on our server. For example, the application displays the current temperature of the box in real time.
+    The application includes several screens: a home page, a dashboard showing live temperature and a history page displaying all recorded values. This historical view also includes a real-time graph to improve data interpretation.
+    The data displayed on the History page is retrieved from a real database because the data was previously stored locally in the previous version of this project.
+    This project helped me combine embedded systems, mobile development and real-time monitoring skills, which I am eager to continue developing in my future career.
+
+  </p>
+</div>
+
+  </section>
+  
+</body>
+</html>
